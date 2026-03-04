@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --cor-0:#107361;
+    --cor-1:#1d7373;
+    --cor-2:#0f5959;
+    --cor-3:#0a3a40;
+    --cor-4:#042326;
+    --cor-5:black;
+    --cor-6:white;
+}
+
+body{
+    background-color: var(--cor-4);
+    background-image: url(imagens/pexels-enginakyurt-15270376.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom, #000000f4, #000000e9  );
+    z-index: -1;
+    pointer-events: none;
+}
+header{
+    background-color: var(--cor-4);
+    color: white;
+    padding: 50px 0 10px;
+    text-align: center;
+}
+.H1__prime1{
+    font-family: Anton, Arial, sans-serif;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    font-weight: lighter;
+
+}
+.NAV__prime1{
+    position: relative;
+    background-color: var(--cor-5);
+    max-width: 525px;
+    height: 50px;
+    border: solid 3px ;
+    border-radius: 10px ;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.NAV__prime1 .A__prime1{
+    color: var(--cor-6);
+    position: relative;
+    display: inline-block;
+    padding: 0 23px;
+    flex-wrap: wrap;
+
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 2;
+}
+.A__prime1:hover{
+    text-shadow: 0px 0px 2px var(--cor-6);
+}
+
+span{
+    position: absolute;
+    background-image: linear-gradient(to right, var(--cor-0), var(--cor-1)) ;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 135px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.NAV__prime1 .A__prime1:nth-child(1):hover~span{
+    left: 0;
+}
+.NAV__prime1 .A__prime1:nth-child(2):hover~span{
+    left: 135px;
+    width: 120px;
+}
+.NAV__prime1 .A__prime1:nth-child(3):hover~span{
+    left: 270px;
+    width: 100px;
+}
+.NAV__prime1 .A__prime1:nth-child(4):hover ~ span{
+    left: 370px;
+    width: 150px;
+}
