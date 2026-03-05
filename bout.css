@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+
 }
 :root{
     --cor-0:#107361;
@@ -45,7 +46,7 @@ header{
     padding: 50px 0 10px;
     text-align: center;
 }
-.H1__prime1{
+.H1__prime0{
     font-family: Anton, Arial, sans-serif;
     padding: 20px;
     letter-spacing: 2px;
@@ -53,7 +54,7 @@ header{
     font-weight: lighter;
 
 }
-.NAV__prime1{
+.NAV__prime0{
     position: relative;
     background-color: var(--cor-5);
     max-width: 525px;
@@ -67,7 +68,7 @@ header{
 
 }
 
-.NAV__prime1 .A__prime1{
+.NAV__prime0 .A__prime0{
     color: var(--cor-6);
     position: relative;
     display: inline-block;
@@ -78,7 +79,7 @@ header{
     text-decoration: none;
     z-index: 2;
 }
-.A__prime1:hover{
+.A__prime0:hover{
     text-shadow: 0px 0px 2px var(--cor-6);
 }
 
@@ -92,18 +93,48 @@ span{
     border-radius: 10px;
     transition: 0.5s;
 }
-.NAV__prime1 .A__prime1:nth-child(1):hover~span{
+.NAV__prime0 .A__prime0:nth-child(1):hover~span{
     left: 0;
 }
-.NAV__prime1 .A__prime1:nth-child(2):hover~span{
+.NAV__prime0 .A__prime0:nth-child(2):hover~span{
     left: 135px;
     width: 120px;
 }
-.NAV__prime1 .A__prime1:nth-child(3):hover~span{
+.NAV__prime0 .A__prime0:nth-child(3):hover~span{
     left: 270px;
     width: 100px;
 }
-.NAV__prime1 .A__prime1:nth-child(4):hover ~ span{
+.NAV__prime0 .A__prime0:nth-child(4):hover ~ span{
     left: 370px;
     width: 150px;
+}
+#SEC__prime0{
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+#SEC__prime0::before{
+    content: "";
+    position: absolute;
+    inset: -5px;
+    background: linear-gradient(45deg, var(--cor-0), var(--cor-1), var(--cor-2), var(--cor-3), var(--cor-4));
+    border-radius: 50%;
+    z-index: -1;
+
+}
+img{
+    border-radius: 50%;
+}
+#H2__prime0{
+    padding: 10px;
+    font-family: Anton, Arial, sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 2px;
+
 }
