@@ -8,6 +8,22 @@
     padding: 0%;
 
 }
+@media (max-width: 600px){
+
+    header{
+        padding: 30px 10px;
+    }
+
+    .NAV__prime0{
+        max-width: 40%;
+    }
+
+    .NAV__prime0 .A__prime0{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+}
 :root{
     --cor-0:#107361;
     --cor-1:#1d7373;
@@ -46,11 +62,16 @@ header{
     padding: 50px 0 10px;
     text-align: center;
 }
+/*
+se 5vw < 1.5rem → usa 1.5rem
+se 5vw > 2.5rem → usa 2.5rem
+senão → usa 5vw
+*/
 .H1__prime0{
     font-family: Anton, Arial, sans-serif;
     padding: 20px;
     letter-spacing: 2px;
-    font-size: 2.5em;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: lighter;
 
 }
@@ -58,13 +79,17 @@ header{
     position: relative;
     background-color: var(--cor-5);
     max-width: 525px;
-    height: 50px;
+    min-height: 50px;
     border: solid 3px ;
     border-radius: 10px ;
 
     margin: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
+
 
 }
 
@@ -78,7 +103,11 @@ header{
     font-weight: 600;
     text-decoration: none;
     z-index: 2;
+
+    flex: 1;
+    text-align: center;
 }
+
 .A__prime0:hover{
     text-shadow: 0px 0px 2px var(--cor-6);
 }
@@ -89,7 +118,7 @@ span{
     top: 0;
     left: 0;
     height: 100%;
-    width: 135px;
+    width: 25%;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -97,23 +126,24 @@ span{
     left: 0;
 }
 .NAV__prime0 .A__prime0:nth-child(2):hover~span{
-    left: 135px;
-    width: 120px;
+    left: 25%;
+    
 }
 .NAV__prime0 .A__prime0:nth-child(3):hover~span{
-    left: 270px;
-    width: 100px;
+    left: 50%;
 }
 .NAV__prime0 .A__prime0:nth-child(4):hover ~ span{
-    left: 370px;
-    width: 150px;
+    left: 75%;
 }
 #SEC__prime0{
     position: relative;
     text-align: center;
-    color: aliceblue;
+    color: var(--cor-6);
+
     width: 250px;
     height: 250px;
+    aspect-ratio: 1/1;
+
     margin: auto;
     margin-top: 10px;
     border-radius: 50%;
@@ -129,6 +159,9 @@ span{
 
 }
 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 #H2__prime0{
