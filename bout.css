@@ -158,7 +158,7 @@ span{
     z-index: -1;
 
 }
-img{
+#Gui{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -189,4 +189,34 @@ img{
     flex-wrap: wrap;
     font-size: 20px;
     
+}
+#SEC__prime2{
+    background-color: var(--cor-5) ;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+
+}
+#DV__prime0{
+    text-align: center;
+    height: 200px;
+    width: max-content;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 30px;
+    animation: rolar 10s linear infinite;
+}
+@keyframes rolar{
+
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-130%);
+    }
 }
