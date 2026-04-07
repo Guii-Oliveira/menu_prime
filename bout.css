@@ -191,9 +191,13 @@ span{
     
 }
 #SEC__prime2{
+
     background-color: var(--cor-5) ;
     height: 200px;
     width: 100%;
+    border: none;
+    border-top: solid 5px var(--cor-4);
+    border-bottom: solid 5px var(--cor-4);
     display: flex;
     justify-content: right;
     align-items: center;
